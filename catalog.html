@@ -10,21 +10,28 @@
          <div class="navigation">
            <img class="logo" src="images/logo.svg" alt="Логотип Седона">
            <ul class="navigation-list navigation-main">
-             <li class="navigation-item">
-               <a class="navigation-link" href="#">Главная</a>
-               <a class="navigation-link" href="#">О Седоне</a>
-               <a class="navigation-link" href="catalog.html">Гостиницы</a>
-             </li>
-           </ul>
-           <ul class="navigation-list navigation-user">
-             <li class="navigation-item">
-               <a class="navigation-link-search" href="#">
-                 <span class="visually-hidden">Поиск</span></a>
-               <a class="navigation-link-favourites" href="#">
-                 <span class="visually-hidden">Избранное</span></a> 
-               <a class="navigation-link-button" href="#">Хочу сюда!</a>
-             </li>
-           </ul>
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link" href="#">О Седоне</a>
+              <a class="navigation-link navigation-link--hotel" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item navigation-item--user">
+              <a class="navigation-link navigation-link-search" href="#">
+                <span class="visually-hidden">Поиск</span></a>
+                </li>
+            <li class="navigation-item navigation-item--user"> 
+              <a class="navigation-link navigation-link-favourites" href="#">
+                <span class="visually-hidden">Избранное</span></a>
+                <div class="circle">
+                    12
+                </div>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
          </div>
        </header>
 
@@ -47,49 +54,55 @@
          </header>
          <section class="filters">
             <h2 class="visually-hidden">Фильтры</h2>
-            <form class="filters-infrastructure" action="#" method="get">
+            <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="filters-group">
                   <legend class="filters-title">Инфраструктура:</legend>
                   <ul class="filters-list">
                      <li class="filters-item">
                       <label class="control">
-                         <input class="control-input" type="checkbox" name="Бассейн" checked> 
-                         Бассейн
+                         <input class="control-input visually-hidden" type="checkbox" name="Бассейн" checked> 
+                         <span class="control-mark"></span>
+                         <span class="control-label">Бассейн</span>
                      </label>  
                      </li>
                      <li class="filters-item">
                         <label class="control">
-                           <input class="control-input" type="checkbox" name="Парковка" checked> 
-                           Парковка
+                           <input class="control-input visually-hidden" type="checkbox" name="Парковка" checked> 
+                           <span class="control-mark"></span>
+                           <span class="control-label">Парковка</span>
                        </label>  
                      </li>
                      <li class="filters-item">
                         <label class="control">
-                           <input class="control-input" type="checkbox" name="Wi-Fi"> 
-                           Wi-Fi
+                           <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi"> 
+                           <span class="control-mark"></span>
+                           <span class="control-label">Wi-Fi</span>
                        </label>  
                      </li>
                   </ul>
                </fieldset>
-               <fieldset class="filters-group">
+               <fieldset class="filters-group filters-group2">
                   <legend class="filters-title">Тип Жилья:</legend>
                   <ul class="filters-list">
                      <li class="filters-item">
                       <label class="control">
-                         <input class="control-input" type="radio" name="type-hotel" checked> 
-                         Гостиница
+                         <input class="control-input visually-hidden" type="radio" name="type-hotel" checked> 
+                         <span class="control-mark"></span>
+                         <span class="control-label">Гостиница</span>
                      </label>  
                      </li>
                      <li class="filters-item">
                         <label class="control">
-                           <input class="control-input" type="radio" name="type-hotel" checked> 
-                           Мотель
+                           <input class="control-input visually-hidden" type="radio" name="type-hotel" checked> 
+                           <span class="control-mark"></span>
+                           <span class="control-label">Мотель</span>
                        </label>  
                      </li>
                      <li class="filters-item">
                         <label class="control">
-                           <input class="control-input" type="radio" name="type-hotel"> 
-                           Апартаменты
+                           <input class="control-input visually-hidden" type="radio" name="type-hotel"> 
+                           <span class="control-mark"></span>
+                           <span class="control-label">Апартаменты</span>
                        </label>  
                      </li>
                   </ul>
@@ -109,13 +122,13 @@
             <option value="cheap">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
          </select>
-         <a class="button button-current" href="#">
+         <a class="button button-current button-cards" href="#">
             <span class="visually-hidden">Показать карточки</span>
          </a>
-         <a class="button" href="#">
+         <a class="button button-slide" href="#">
             <span class="visually-hidden">Показать слайдшоу</span>
          </a>
-         <a class="button" href="#">
+         <a class="button button-list" href="#">
             <span class="visually-hidden">Показать список</span>
          </a>
          </div>
@@ -217,9 +230,9 @@
           </section>
           <section class="mail mail-catalog">
             <h2 class="mail-title">Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-            <form class="mail-form" action="#" method="post">
-              <input type="email" name="email" placeholder="Ваш e-mail">
+            <p class="mail-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+            <form action="#" method="post" class="email-form">
+              <input type="email" name="email" placeholder="Ваш e-mail" class="mail-form">
               <button class="mail-button" type="submit">Подписаться</button>
             </form>
           </section>
