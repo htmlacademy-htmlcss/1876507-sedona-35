@@ -258,20 +258,19 @@
   padding-bottom: 80px;
 }
 .advantage-item-food {
-  background-image:url("../images/advantage-icon (1).svg");
+  background-image:url("../images/advantage-icon(1).svg");
   background-repeat: no-repeat;
   background-position: 50% 80px;
   padding-top: 182px;
   padding-bottom: 80px;
 }
 .advantage-item-souvenir {
-  background-image:url("../images/advantage-icon (2).svg");
+  background-image:url("../images/advantage-icon(2).svg");
   background-repeat: no-repeat;
   background-position: 50% 80px;
   padding-top: 182px;
   padding-bottom: 80px;
 }
-
 
 .advantages-item-blue {
   background-color: #82B3D3;
