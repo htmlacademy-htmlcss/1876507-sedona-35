@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <div class="navigation">
-        <a class="navigation-logo"><img class="logo" src="images/logo.svg" alt="Логотип Седона" width="140" height="70"></a>
+        <img class="logo" src="images/logo.svg" alt="Логотип Седона">
         <ul class="navigation-list navigation-main">
           <li class="navigation-item">
             <a class="navigation-link navigation-link--main" href="index.html">Главная</a>
@@ -72,26 +72,30 @@
       </div>
 
     <div class="advantages-item--img">
-      <div>
-        <img class="advantages-img" src="images/advantages-2.png" alt="Мост дьявола">
-      </div>
       <div class="advantages-item advantages-item-blue">
         <h3 class="advantages-item-title">Там есть<br> мост дьявола</h3>
         <p class="advantages-item-text">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
       </div>
+
+      <div>
+        <img class="advantages-img" src="images/advantages-2.png" alt="Мост дьявола">
+      </div>
     </div>
       
-      <div class="advantages-item advantage-item-house">
+      <div class="advantages-item">
+          <img class="advantages-icon" src="images/Advantage-icon.svg" alt="Жилье"> 
           <h3 class="advantages-title">Жильё</h3>
           <p class="advantages-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </div>
 
-      <div class="advantages-item advantages-item-wight advantage-item-food">
+      <div class="advantages-item advantages-item-wight">
+        <img class="advantages-icon" src="images/Advantage-icon (1).svg" alt="Еда"> 
         <h3 class="advantages-title">Еда</h3>
         <p class="advantages-item-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
       </div>
 
-      <div class="advantages-item advantage-item-souvenir">
+      <div class="advantages-item">
+        <img class="advantages-icon" src="images/Advantage-icon (2).svg" alt="Сувениры"> 
         <h3 class="advantages-title">Сувениры</h3>
         <p class="advantages-item-text">Не только китайского, но и настоящего местного производства!</p>
       </div>
@@ -131,72 +135,14 @@
         </ul>
       </section>
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a href="tel:+7 (812) 812-12-12" class="phone">+7 (812) 812-12-12</a>
-      </section>
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="phone">+7 (812) 812-12-12</p>
+    </section>
     <section class="developer">
     <h2 class="visually-hidden">Разработчик</h2>
     <a  class="developer-link" href="htmlacademy.ru">
-      <img class="developer-img" src="images/logo-academy.svg" alt="Логотип html academy">
+      <img class="developer-img" src="images/Logo-academy.svg" alt="Логотип html academy">
     </section>
     </footer>
-
-    <div class="popover popover-cart">
-      <button class="popover-close-button button-light">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-      
-      <section class="popover-content">
-        <h2 class="popover-title">Поиск гостиницы в Седоне</h2>
-        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p  class="field-group">
-            <label for="date-in">Дата заезда:</label>
-            <input class="auth-form-date field" type="text" id="date-in" name="date-in" placeholder="27 апреля 2020">
-            <span class="addition">Мы не можем отправить вас в прошлое.</span>
-          </p>
-          <p  class="field-group">
-            <label for="date-out">Дата выезда:</label>
-            <input class="auth-form-date field" type="text" id="date-out" name="date-out" placeholder="1 сентября 2023">
-            <span class="addition addition-color">На эти даты есть свободные номера. Пока есть.</span>
-          </p>
-          <div class="field-block">
-          <p class="field-group">
-            <lavel class="old">Взрослые:</lavel>
-            <input class="input-number field" type="text" id="old" name="old" placeholder="2">
-            <button class="control-score minus" type="button"> 
-              <span class="control-score-minus"></span>
-            </button>
-            <button class="control-score plus">
-              <span class="control-score-plus"></span>
-              <span class="control-score-minus"></span>
-            </button>
-          </p>
-          <p class="field-group">
-            <lavel class="child">Дети:</lavel>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
-              </svg>
-              </button>
-            <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-            </span>
-            </span>
-            <input class="input-number field" type="text" id="old" name="old" placeholder="2">
-            <button class="control-score minus2" type="button"> 
-              <span class="control-score-minus"></span>
-            </button>
-            <button class="control-score plus2">
-              <span class="control-score-plus"></span>
-              <span class="control-score-minus"></span>
-            </button>
-          </p>
-          </div>
-          <button class="auth-form-button" type="submit">Найти</button>
-        </form>
-      </section>
-  </div>
   </body>
 </html>
